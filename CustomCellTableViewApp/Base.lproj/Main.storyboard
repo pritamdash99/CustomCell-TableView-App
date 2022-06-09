@@ -16,23 +16,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="epo-sL-GCy">
-                                <rect key="frame" x="0.0" y="133" width="414" height="729"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="epo-sL-GCy">
+                                <rect key="frame" x="0.0" y="62" width="414" height="800"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="729" id="MCt-p0-RY7"/>
+                                    <constraint firstAttribute="height" constant="800" id="MCt-p0-RY7"/>
                                 </constraints>
+                                <color key="separatorColor" red="0.44120506078996613" green="0.53681651404639175" blue="0.44161369962119928" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="epo-sL-GCy" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="UP9-xA-Hyb"/>
-                            <constraint firstItem="epo-sL-GCy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="89" id="Zt9-7j-s3v"/>
+                            <constraint firstItem="epo-sL-GCy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="18" id="a2G-CK-gop"/>
                             <constraint firstItem="epo-sL-GCy" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="cr3-p0-7Xa"/>
                             <constraint firstItem="epo-sL-GCy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="oPn-g7-six"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="chatListTableView" destination="epo-sL-GCy" id="CLD-1c-Y1z"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
